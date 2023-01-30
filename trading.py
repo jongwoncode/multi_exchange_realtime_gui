@@ -265,9 +265,6 @@ class MyWindow(QMainWindow):
                 self.plot_binance = fplt.candlestick_ochl(ax= self.binance_ax,
                                                                 datasrc = self.df_binance[['timestamp', 'Open', 'Close', 'High', 'Low']])
                 fplt.show(qt_exec=False)
-
-
-
         
 
     @pyqtSlot(dict)
